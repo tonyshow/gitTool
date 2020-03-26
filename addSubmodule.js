@@ -4,7 +4,7 @@ var child_process = require("child_process");
 var app = module.exports = {};
 app.doMain = function()
 {
-    console.log("参数1:git项目地址,参数2:子模块路径")
+    console.log("命令格式提示:参数1:git项目地址,参数2:子模块路径")
     if (!!gitProUrl && !!sumPath)
     {
         let info = `git submodule add ${gitProUrl} ${sumPath}`;
